@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19142.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aBh-KM-fFL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aBh-KM-fFL">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19129"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,7 +39,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="postcell" id="oPy-iF-vaC" userLabel="UserPosts" customClass="PostsListTableViewCell" customModule="AmadeusTask" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="414" height="101"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="101"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oPy-iF-vaC" id="9jg-SI-nSd">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="101"/>
@@ -182,13 +182,12 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xRD-TV-B7D" userLabel="email">
-                                                        <rect key="frame" x="208" y="38" width="198" height="35"/>
+                                                        <rect key="frame" x="218" y="38" width="188" height="35"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="35" id="6TA-V5-JLl"/>
                                                         </constraints>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="email"/>
                                                         <connections>
                                                             <action selector="sendEmailPressed:" destination="REu-zr-DXk" eventType="touchUpInside" id="M5Y-cB-Ocm"/>
                                                         </connections>
@@ -203,22 +202,20 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="vF9-T9-WMY" userLabel="address">
-                                                        <rect key="frame" x="208" y="73" width="194" height="80"/>
+                                                        <rect key="frame" x="218" y="73" width="184" height="80"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="80" id="Jho-Kq-KCh"/>
                                                         </constraints>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="address"/>
                                                         <connections>
                                                             <action selector="openMapPressed:" destination="REu-zr-DXk" eventType="touchUpInside" id="XTp-3j-uOl"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Inz-tP-AbT" userLabel="phone">
-                                                        <rect key="frame" x="208" y="153" width="194" height="35"/>
+                                                        <rect key="frame" x="218" y="153" width="184" height="35"/>
                                                         <color key="tintColor" systemColor="labelColor"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="plain" title="phone"/>
                                                         <connections>
                                                             <action selector="callPressed:" destination="REu-zr-DXk" eventType="touchUpInside" id="YrS-6D-xL7"/>
                                                         </connections>
@@ -235,13 +232,13 @@
                                                     <constraint firstAttribute="trailing" secondItem="Inz-tP-AbT" secondAttribute="trailing" constant="12" id="3L8-qD-d3f"/>
                                                     <constraint firstItem="xRD-TV-B7D" firstAttribute="bottom" secondItem="vF9-T9-WMY" secondAttribute="top" id="3MY-ZU-QIB"/>
                                                     <constraint firstItem="Inz-tP-AbT" firstAttribute="bottom" secondItem="6gM-BP-mvb" secondAttribute="top" id="423-18-W4c"/>
-                                                    <constraint firstItem="Inz-tP-AbT" firstAttribute="leading" secondItem="Drc-th-8YR" secondAttribute="trailing" constant="6" id="5bd-5B-SkU"/>
+                                                    <constraint firstItem="Inz-tP-AbT" firstAttribute="leading" secondItem="Drc-th-8YR" secondAttribute="trailing" constant="16" id="5bd-5B-SkU"/>
                                                     <constraint firstAttribute="bottom" secondItem="6gM-BP-mvb" secondAttribute="bottom" id="6mB-hd-Uk3"/>
                                                     <constraint firstAttribute="trailing" secondItem="xRD-TV-B7D" secondAttribute="trailing" constant="8" id="BhJ-xG-4nl"/>
                                                     <constraint firstItem="7tR-Zn-8Gc" firstAttribute="top" secondItem="S8P-uy-yU4" secondAttribute="top" constant="8" id="DSc-14-1vu"/>
                                                     <constraint firstItem="Drc-th-8YR" firstAttribute="leading" secondItem="S8P-uy-yU4" secondAttribute="leading" constant="14" id="Dg9-Hj-PnR"/>
-                                                    <constraint firstItem="vF9-T9-WMY" firstAttribute="leading" secondItem="Drc-th-8YR" secondAttribute="trailing" constant="6" id="ETC-7F-XrM"/>
-                                                    <constraint firstItem="xRD-TV-B7D" firstAttribute="leading" secondItem="Drc-th-8YR" secondAttribute="trailing" constant="6" id="Ekn-oA-Uco"/>
+                                                    <constraint firstItem="vF9-T9-WMY" firstAttribute="leading" secondItem="Drc-th-8YR" secondAttribute="trailing" constant="16" id="ETC-7F-XrM"/>
+                                                    <constraint firstItem="xRD-TV-B7D" firstAttribute="leading" secondItem="Drc-th-8YR" secondAttribute="trailing" constant="16" id="Ekn-oA-Uco"/>
                                                     <constraint firstItem="7tR-Zn-8Gc" firstAttribute="leading" secondItem="Drc-th-8YR" secondAttribute="trailing" constant="16" id="Jqn-xO-ZBZ"/>
                                                     <constraint firstItem="7tR-Zn-8Gc" firstAttribute="bottom" secondItem="xRD-TV-B7D" secondAttribute="top" id="PRG-u7-adb"/>
                                                     <constraint firstAttribute="trailing" secondItem="6gM-BP-mvb" secondAttribute="trailing" constant="12" id="QQf-SO-MbY"/>
