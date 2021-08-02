@@ -12,9 +12,9 @@ class ApiManager {
     private var dataTask: URLSessionDataTask?
     func getPostsData(completion: @escaping (Result<[PostsData], Error>) -> Void) {
         
-        let popularMoviesURL = APIConstant.postsURL + "posts"
+        let postsURL = APIConstant.postsURL + "posts"
         
-        guard let url = URL(string: popularMoviesURL) else {return}
+        guard let url = URL(string: postsURL) else {return}
     
         dataTask = URLSession.shared.dataTask(with: url) { (data, response, error) in
             
