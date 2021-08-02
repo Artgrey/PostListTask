@@ -43,9 +43,9 @@ class UserPostsController: BaseViewController, UpdateTableViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "SelectedPost" {
             guard let detailsVC = segue.destination as? UserDetailsController else {return}
-            guard let selectedMovieCell = sender as? UITableViewCell else {return}
+            guard let selectedPostsCell = sender as? UITableViewCell else {return}
             
-            if let indexPath = table.indexPath(for: selectedMovieCell) {
+            if let indexPath = table.indexPath(for: selectedPostsCell) {
                 let selectedPost = postsModel.object(indexPath: indexPath)
                 detailsVC.postsModel = PostsViewModel(postsInfo: selectedPost)
                 
